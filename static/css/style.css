@@ -1,20 +1,80 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+/* base_header.css */
+.base-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #022b3a; /* Rectangle color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light drop shadow */
+    padding: 10px 20px; /* Space inside the header */
+}
+
+.header-left h1 {
+    font-size: 36px; /* Large font size for law firm's name */
+    color: #285565; /* Color of the law firm name */
     margin: 0;
+}
+
+.header-right {
+    position: relative;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    background-color: #285565; /* Button base color */
+    padding: 8px 15px;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    color: #e1e5f2; /* Circle color and text */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circle shape */
+    background-color: #e1e5f2;
+    color: #285565; /* Initials color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.dropdown-arrow {
+    font-size: 18px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px; /* Below the button */
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+}
+
+.dropdown-menu ul {
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-h1 {
-    color: #333;
+.dropdown-menu ul li {
+    padding: 8px 0;
+    text-align: center;
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+.dropdown-menu ul li a {
+    color: #285565; /* Link color */
+    text-decoration: none;
+}
+
+.profile-btn:hover + .dropdown-menu,
+.dropdown-menu:hover {
+    display: block; /* Show the menu on hover */
 }

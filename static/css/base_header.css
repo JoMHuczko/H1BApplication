@@ -1,0 +1,59 @@
+/*base_header.css*/
+
+.base-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #022b3a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-left h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: serif;
+    color: #e1e1e1;
+    margin: 0;
+}
+
+.profile-btn-group {
+    position: relative;
+    justify-content:right;
+    align-items: center;
+    padding-inline: 5px;
+}
+
+.profile-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #285565;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-color:#e1e1e1;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e1e1e1;
+}
+
+.dropdown {
+    display: flex;
+}
+
+.dropdown-arrow {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    color: #e1e1e1;
+}
+
+.dropdown-options {}
+
+
+
